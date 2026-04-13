@@ -1,7 +1,5 @@
-left = 0
-right = 0
-up = 0
-down = 0
+x = 0
+y = 0
 
 while(True):
     print("ENTER 0 FOR EXIT:- ")
@@ -15,10 +13,15 @@ while(True):
         break
     
     if(val == 1):
-        up+=1
+        y+=1
     elif(val == 2):
-        down+=1
+        y-=1
     elif(val == 3):
-        left+=1
+        x-=1
     elif(val == 4):
-        right+=1 
+        x+=1
+        
+    else:
+        break
+    
+    print("MOVED TO","[",x,y,"]")
